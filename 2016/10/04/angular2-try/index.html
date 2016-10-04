@@ -1,0 +1,539 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>angular2-try | 多牧乡</title>
+    <meta name="author" content="John Doe">
+    
+    <meta name="description" content="我会常常说，愿景之类的，删除掉就好了。">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="angular2-try"/>
+    <meta property="og:site_name" content="多牧 的 幻想乡"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="/blog/favicon.ico">
+    <link rel="alternate" href="/blog/atom.xml" title="多牧 的 幻想乡" type="application/atom+xml">
+    <link rel="stylesheet" href="/blog/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/blog/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/blog/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="cyan">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">多牧 的 幻想乡</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/blog/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/blog//archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/blog/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav amber darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://mingdom.cn/Dom/Domlogo.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">明多牧</p>
+                        <p class="desc">Web前端/产品策划/交互设计/现实逃避</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/blog/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/blog//archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/blog/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav amber darken-1" id="category-menu">
+    
+
+            
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper amber">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>angular2-try</h1>
+    
+
+
+            </div>
+            <time class="light-blue-link-context" datetime="2016-10-04T15:41:01.000Z"><a href="/blog/2016/10/04/angular2-try/">2016-10-04</a></time>
+
+            
+
+            <div class="toc light-blue-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#『Angular-2-时代』"><span class="section table-of-contents-text">『Angular 2 时代』</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#写在前面"><span class="section table-of-contents-text">写在前面</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#开始"><span class="section table-of-contents-text">开始</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#前提准备"><span class="section table-of-contents-text">前提准备</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#创建相应的组件"><span class="section table-of-contents-text">创建相应的组件</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#创建相应的todolist类"><span class="section table-of-contents-text">创建相应的todolist类</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#建立相关服务"><span class="section table-of-contents-text">建立相关服务</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#加入todo组件"><span class="section table-of-contents-text">加入todo组件</span></a></li></ol></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#错误"><span class="section table-of-contents-text">错误</span></a></li></ol></li></ol>
+</div>
+
+
+            <div class="entry light-blue-link-context">
+                <h1 id="『Angular-2-时代』"><a href="#『Angular-2-时代』" class="headerlink" title="『Angular 2 时代』"></a>『Angular 2 时代』</h1><p><img src="https://angular.io/resources/images/home/loved-by-millions.png" alt=""></p>
+<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>这个博客还没有很多技术文章，就让这个来做第一个吧。<br>谷歌爸爸追上了时代的潮流，将大而全的angular推出了完全重构组件化的angular2。<br>所以我们就来使用angular-cli，致力于傻瓜式使用angular2吧。</p>
+<a id="more"></a>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="前提准备"><a href="#前提准备" class="headerlink" title="前提准备"></a>前提准备</h3><p>使用win10开发。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">npm install -g angular-cli</div><div class="line">ng version</div><div class="line">	angular-cli: 1.0.0-beta.16</div><div class="line">	node: 6.0.0</div><div class="line">	os: win32 x64</div><div class="line">ng new angular2-todo-app</div></pre></td></tr></table></figure>
+<p>这样就能创建好一个标准的项目了。</p>
+<p>你可以使用ng serve来开启这个项目。</p>
+<p>访问<a href="http://localhost:4200/" target="_blank" rel="external">http://localhost:4200/</a> 就能看到app works</p>
+<h3 id="创建相应的组件"><a href="#创建相应的组件" class="headerlink" title="创建相应的组件"></a>创建相应的组件</h3><p>因为我们这次要做的是一个简单的todo list 所以我们先</p>
+<h4 id="创建相应的todolist类"><a href="#创建相应的todolist类" class="headerlink" title="创建相应的todolist类"></a>创建相应的todolist类</h4><pre><code>ng generate class Todo
+</code></pre><p>你就会得到 todo.ts<br>我们就可以来加入一些todo的基本属性</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/** 习惯了js的各位不要忘记ts的类型检测 **/</span></div><div class="line"><span class="keyword">export</span> <span class="keyword">class</span> Todo &#123;</div><div class="line">  id: <span class="built_in">number</span>;</div><div class="line">  title: <span class="built_in">string</span> = <span class="string">''</span>;</div><div class="line">  complete: <span class="built_in">boolean</span> = <span class="literal">false</span>;</div><div class="line"></div><div class="line">  <span class="keyword">constructor</span>(values: Object = &#123;&#125;) &#123;</div><div class="line">    <span class="built_in">Object</span>.assign(<span class="keyword">this</span>, values);</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>然后我们开始</p>
+<h4 id="建立相关服务"><a href="#建立相关服务" class="headerlink" title="建立相关服务"></a>建立相关服务</h4><pre><code>ng generate service Todo
+</code></pre><p>todo.service.ts</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123;Injectable&#125; from <span class="string">'@angular/core'</span>;</div><div class="line"><span class="keyword">import</span> &#123;Todo&#125; from <span class="string">'./todo'</span>;</div><div class="line"></div><div class="line">@Injectable()</div><div class="line"><span class="keyword">export</span> <span class="keyword">class</span> TodoService &#123;</div><div class="line"></div><div class="line">  <span class="comment">// todo ID 的计数器</span></div><div class="line">  <span class="comment">// id会自增</span></div><div class="line">  lastId: <span class="built_in">number</span> = <span class="number">0</span>;</div><div class="line"></div><div class="line">  <span class="comment">// 建立一个数组存放 todo's</span></div><div class="line">  todos: Todo[] = [];</div><div class="line"></div><div class="line">  <span class="keyword">constructor</span>() &#123;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  addTodo(todo: Todo): TodoService &#123;</div><div class="line">    <span class="keyword">if</span> (!todo.id) &#123;</div><div class="line">      todo.id = ++<span class="keyword">this</span>.lastId;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">this</span>.todos.push(todo);</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  deleteTodoById(id: <span class="built_in">number</span>): TodoService &#123;</div><div class="line">    <span class="keyword">this</span>.todos = <span class="keyword">this</span>.todos</div><div class="line">      .filter(todo =&gt; todo.id !== id);</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  updateTodoById(id: <span class="built_in">number</span>, values: <span class="built_in">Object</span> = &#123;&#125;): Todo &#123;</div><div class="line">    <span class="keyword">let</span> todo = <span class="keyword">this</span>.getTodoById(id);</div><div class="line">    <span class="keyword">if</span> (!todo) &#123;</div><div class="line">      <span class="keyword">return</span> <span class="literal">null</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">Object</span>.assign(todo, values);</div><div class="line">    <span class="keyword">return</span> todo;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  getAllTodos(): Todo[] &#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.todos;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  getTodoById(id: <span class="built_in">number</span>): Todo &#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.todos</div><div class="line">      .filter(todo =&gt; todo.id === id)</div><div class="line">      .pop();</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  toggleTodoComplete(todo: Todo)&#123;</div><div class="line">    <span class="keyword">let</span> updatedTodo = <span class="keyword">this</span>.updateTodoById(todo.id, &#123;</div><div class="line">      complete: !todo.complete</div><div class="line">    &#125;);</div><div class="line">    <span class="keyword">return</span> updatedTodo;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="加入todo组件"><a href="#加入todo组件" class="headerlink" title="加入todo组件"></a>加入todo组件</h4><pre><code>ng generate component TodoApp
+</code></pre><p>将之前的服务与组件联系</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123;Component&#125; from <span class="string">'@angular/core'</span>;</div><div class="line"><span class="keyword">import</span> &#123;Todo&#125; from <span class="string">'../todo'</span>;</div><div class="line"><span class="keyword">import</span> &#123;TodoService&#125; from <span class="string">'../todo.service'</span>;</div><div class="line"></div><div class="line">@Component(&#123;</div><div class="line">  moduleId: <span class="built_in">module</span>.id,</div><div class="line">  selector: <span class="string">'todo-app'</span>,</div><div class="line">  templateUrl: <span class="string">'todo-app.component.html'</span>,</div><div class="line">  styleUrls: [<span class="string">'todo-app.component.css'</span>],</div><div class="line">  providers: [TodoService]</div><div class="line">&#125;)</div><div class="line"><span class="keyword">export</span> <span class="keyword">class</span> TodoAppComponent &#123;</div><div class="line"></div><div class="line">  newTodo: Todo = <span class="keyword">new</span> Todo();</div><div class="line"></div><div class="line">  <span class="keyword">constructor</span>(private todoService: TodoService) &#123;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  addTodo() &#123;</div><div class="line">    <span class="keyword">this</span>.todoService.addTodo(<span class="keyword">this</span>.newTodo);</div><div class="line">    <span class="keyword">this</span>.newTodo = <span class="keyword">new</span> Todo();</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  toggleTodoComplete(todo) &#123;</div><div class="line">    <span class="keyword">this</span>.todoService.toggleTodoComplete(todo);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  removeTodo(todo) &#123;</div><div class="line">    <span class="keyword">this</span>.todoService.deleteTodoById(todo.id);</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="keyword">get</span> todos() &#123;</div><div class="line">    <span class="keyword">return</span> <span class="keyword">this</span>.todoService.getAllTodos();</div><div class="line">  &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>用html写组件的view</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"todoapp"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">header</span> <span class="attr">class</span>=<span class="string">"header"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Todos<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"new-todo"</span> <span class="attr">placeholder</span>=<span class="string">"NEW todo"</span> <span class="attr">autofocus</span>=<span class="string">""</span> [(<span class="attr">ngModel</span>)]=<span class="string">"newTodo.title"</span> (<span class="attr">keyup.enter</span>)=<span class="string">"addTodo()"</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">header</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">section</span> <span class="attr">class</span>=<span class="string">"main"</span> *<span class="attr">ngIf</span>=<span class="string">"todos.length &gt; 0"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">"todo-list"</span>&gt;</span></div><div class="line">      <span class="tag">&lt;<span class="name">li</span> *<span class="attr">ngFor</span>=<span class="string">"let todo of todos"</span> [<span class="attr">class.completed</span>]=<span class="string">"todo.complete"</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"view"</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">input</span> <span class="attr">class</span>=<span class="string">"toggle"</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> (<span class="attr">click</span>)=<span class="string">"toggleTodoComplete(todo)"</span> [<span class="attr">checked</span>]=<span class="string">"todo.complete"</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">label</span>&gt;</span>&#123;&#123;todo.title&#125;&#125;<span class="tag">&lt;/<span class="name">label</span>&gt;</span></div><div class="line">          <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"destroy"</span> (<span class="attr">click</span>)=<span class="string">"removeTodo(todo)"</span>&gt;</span><span class="tag">&lt;/<span class="name">button</span>&gt;</span></div><div class="line">        <span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line">      <span class="tag">&lt;/<span class="name">li</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">section</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">footer</span> <span class="attr">class</span>=<span class="string">"footer"</span> *<span class="attr">ngIf</span>=<span class="string">"todos.length &gt; 0"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"todo-count"</span>&gt;</span><span class="tag">&lt;<span class="name">strong</span>&gt;</span>&#123;&#123;todos.length&#125;&#125;<span class="tag">&lt;/<span class="name">strong</span>&gt;</span> &#123;&#123;todos.length == 1 ? 'item' : 'items'&#125;&#125; left<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">footer</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">section</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>之后在app之中直接加入<br>      <todo-app></todo-app><br>就可以了</p>
+<h2 id="错误"><a href="#错误" class="headerlink" title="错误"></a>错误</h2><p>该死的angular-cli……<br>请大家在遇到Uncaught TypeError: uri.match is not a function时候<br>修改node_modules/@angular 下的url_resolve 文件，找到下面函数并修改到如下<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">_split</span>(<span class="params">uri</span>) </span>&#123;</div><div class="line">    <span class="keyword">return</span>  uri.toString().match(_splitRe);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>最后，自己将todolist加入样式，就可以啦。</p>
+<p>（太懒了就不想加了）</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- Duoshuo Comment BEGIN -->
+                <div class="ds-thread" data-thread-key="2016/10/04/angular2-try/" data-title="angular2-try" data-url="http://mingdom.cn/blog/2016/10/04/angular2-try/"></div>
+
+                <script type="text/javascript">
+                    console.log(document.querySelector('.ds-thread'));
+                    var duoshuoQuery = {
+                        short_name: 'mingdom'
+                    };
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';
+                        ds.async = true;
+                        ds.src = (document.location.protocol == 'https:'
+                            ? 'https:'
+                            : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- Duoshuo Comment END -->
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large light-blue">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer amber darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m3 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/2866327102" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/mxz96102" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+            </div>
+            
+
+            
+            <div class="col m9 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="" target="_blank">Friends:</a>
+                
+                    <a class="social-link" href="https://lizekang.github.io" target="_blank">Zekang Li</a>
+                
+                    <a class="social-link" href="https://chenmo1996.github.io" target="_blank">Guojin Chen</a>
+                
+                    <a class="social-link" href="https://www.zhgeng.cn" target="_blank">G-Petrichor</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright light-blue-link-context">
+        <div class="container">
+            © 2016 MingDom All rights reserved.
+            <p class="right" style="margin-top: 0;">使用 <a href="https://hexo.io">Hexo</a> 框架 | 感谢 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('light-blue lighten-2');
+
+            
+            // 添加new标签
+            $('').append('<span class="new badge light-blue"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/blog/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword light-blue lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword light-blue lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/blog/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=58802746" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>
