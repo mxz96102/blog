@@ -1,0 +1,692 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    
+
+    <title>面向对象复习 | 多牧乡</title>
+    <meta name="author" content="John Doe">
+    
+    <meta name="description" content="我会常常说，愿景之类的，删除掉就好了。">
+    
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:title" content="面向对象复习"/>
+    <meta property="og:site_name" content="多牧 的 幻想乡"/>
+
+    
+    <meta property="og:image" content="undefined"/>
+    
+
+    <link rel="icon" type="image/png" href="/blog/favicon.ico">
+    <link rel="alternate" href="/blog/atom.xml" title="多牧 的 幻想乡" type="application/atom+xml">
+    <link rel="stylesheet" href="/blog/css/lib/materialize.min.css">
+    <link rel="stylesheet" href="/blog/css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="/blog/css/style.css" media="screen" type="text/css">
+
+    
+        <link rel="stylesheet" href="/blog/css/lib/prettify-tomorrow-night-eighties.css" type="text/css">
+    
+    <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+
+<body>
+    <img src="/weixin_favicon.png" style="position: absolute; left: -9999px; opacity: 0; filter: alpha(opacity=0);">
+
+    <nav class="cyan">
+    <div class="nav-wrapper">
+        <a href="#" data-activates="main-menu" class="button-collapse">
+            <i class="fa fa-navicon"></i>
+        </a>
+        <div class="">
+            <a href="/" class="brand-logo hide-on-med-and-down">多牧 的 幻想乡</a>
+            <ul class="right hide-on-med-and-down">
+                
+                    <li>
+                        <a class="menu-home " href="/blog/" >
+                            <i class="fa fa-home "></i>
+                            
+                            首页
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-archive " href="/blog//archives" >
+                            <i class="fa fa-archive "></i>
+                            
+                            归档
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-about " href="/blog/about" >
+                            <i class="fa fa-user "></i>
+                            
+                            关于
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a class="menu-search modal-trigger " href="#search" >
+                            <i class="fa fa-search "></i>
+                            
+                            搜索
+                        </a>
+                    </li>
+                
+            </ul>
+            <div>
+    <ul class="side-nav amber darken-1" id="main-menu">
+        
+        <li class="side-user">
+            <div class="row">
+                <div class="col s4 no-padding">
+                    <img class="avatar-image circle responsive-img" src="http://mingdom.cn/Dom/Domlogo.jpg" alt="User Avatar">
+                </div>
+                <div class="info col s8 valign-wrapper no-padding">
+                    <div class="valign">
+                        <p class="name">明多牧</p>
+                        <p class="desc">Web前端/产品策划/交互设计/现实逃避</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        
+
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-home " href="/blog/" >
+                    <i class="fa fa-home "></i>
+                    
+                    首页
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-archive " href="/blog//archives" >
+                    <i class="fa fa-archive "></i>
+                    
+                    归档
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-about " href="/blog/about" >
+                    <i class="fa fa-user "></i>
+                    
+                    关于
+                </a>
+            </li>
+        
+            <li class="no-padding">
+                <a class="waves-effect menu-search modal-trigger " href="#search" >
+                    <i class="fa fa-search "></i>
+                    
+                    搜索
+                </a>
+            </li>
+        
+    </ul>
+
+    <ul class="side-nav amber darken-1" id="category-menu">
+    
+
+            
+
+    </ul>
+</div>
+
+        </div>
+    </div>
+</nav>
+
+<div id="search" class="modal search-modal">
+    <div class="row">
+        <div class="input-field col s12">
+              <input id="search-input" type="text">
+              <label for="search-input">搜索</label>
+        </div>
+
+    </div>
+    <div id="search-result" class="search-result col s12">
+
+    </div>
+</div>
+
+
+    <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper amber">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
+        
+
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>面向对象复习</h1>
+    
+
+
+            </div>
+            <time class="light-blue-link-context" datetime="2016-11-14T12:54:38.000Z"><a href="/blog/2016/11/14/OOP1/">2016-11-14</a></time>
+
+            
+    <div class="tags-row">
+        
+            <a href="/blog/tags/学习-面向对象/" class="chip light-blue lighten-1">-学习 -面向对象</a>
+        
+    </div>
+
+
+            <div class="toc light-blue-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#面相对象期末总结"><span class="section table-of-contents-text">面相对象期末总结</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#Chapter-1-1"><span class="section table-of-contents-text">Chapter 1.1</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#What-is-Object-Orientation"><span class="section table-of-contents-text">What is Object Orientation?</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#面向对象的基本观点"><span class="section table-of-contents-text">面向对象的基本观点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#面向对象的应用程序（Application）主要特点"><span class="section table-of-contents-text">面向对象的应用程序（Application）主要特点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#面向对象优点"><span class="section table-of-contents-text">面向对象优点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Object-Oriented-Analysis-面向对象分析"><span class="section table-of-contents-text">Object Oriented Analysis 面向对象分析</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Object-Oriented-Design-面向对象设计"><span class="section table-of-contents-text">Object Oriented Design 面向对象设计</span></a></li></ol></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#Chapter-1-2"><span class="section table-of-contents-text">Chapter 1.2</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Object-Attributes-and-Methods"><span class="section table-of-contents-text">Object, Attributes and Methods</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#对象"><span class="section table-of-contents-text">对象</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Main-Types-of-Objects-in-software-system"><span class="section table-of-contents-text">Main Types of Objects in software system</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Objects-Interaction-and-Messages"><span class="section table-of-contents-text">Objects Interaction and Messages</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#类和实例"><span class="section table-of-contents-text">类和实例</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Encapsulation-amp-Information-Hiding-（封装与信息隐藏）"><span class="section table-of-contents-text">Encapsulation & Information Hiding （封装与信息隐藏）</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Inheritance-（继承）"><span class="section table-of-contents-text">Inheritance （继承）</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Polymorphism-（多态）"><span class="section table-of-contents-text">Polymorphism （多态）</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#Benefits-of-OO-concepts"><span class="section table-of-contents-text">Benefits of OO concepts</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#面向对象方法的主要特点"><span class="section table-of-contents-text">面向对象方法的主要特点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#面向对象开发方法的优点"><span class="section table-of-contents-text">面向对象开发方法的优点</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#OOP设计的一般方法和技巧"><span class="section table-of-contents-text">OOP设计的一般方法和技巧</span></a></li></ol></li></ol></li></ol>
+</div>
+
+
+            <div class="entry light-blue-link-context">
+                <h1 id="面相对象期末总结"><a href="#面相对象期末总结" class="headerlink" title="面相对象期末总结"></a>面相对象期末总结</h1><blockquote>
+<p>来自于总结面向对象ppt</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="Chapter-1-1"><a href="#Chapter-1-1" class="headerlink" title="Chapter 1.1"></a>Chapter 1.1</h2><h3 id="What-is-Object-Orientation"><a href="#What-is-Object-Orientation" class="headerlink" title="What is Object Orientation?"></a>What is Object Orientation?</h3><ul>
+<li><p>Object Orientation is a kind of thinking methodology.<br>是一种思维方式，是观察和分析问题的方法或观点。</p>
+<p>Object-Oriented approach:<br>思考的著眼点在系统所需用到的对象以及对象之间的互动。以对象（类）为单位</p>
+</li>
+<li><p>Object-Orientation is a kind of design methodology<br>是一种程序设计模式。</p>
+<p>Objects are the building blocks of the program<br>对象是程序中的基础元素</p>
+<p>Objects represent real-world abstractions within the application<br>应用程序中的对象代表客观事物的抽象</p>
+</li>
+<li><p>OOP是一种计算机编程架构，精髓在于对程序<br>的组织与构造。</p>
+<p>OOP将对象作为程序的基本结构单元，程序由<br>对象组合而成。</p>
+</li>
+</ul>
+<h3 id="面向对象的基本观点"><a href="#面向对象的基本观点" class="headerlink" title="面向对象的基本观点"></a>面向对象的基本观点</h3><ul>
+<li>客观世界由对象组成，任何客观实体都是对象 ，复杂对象可以由简单对象组成 </li>
+<li>具有相同属性和操作的对象可归纳成类，对象是类的一个实例。</li>
+<li>对象之间的联系通过消息传递来维系。</li>
+</ul>
+<h3 id="面向对象的应用程序（Application）主要特点"><a href="#面向对象的应用程序（Application）主要特点" class="headerlink" title="面向对象的应用程序（Application）主要特点"></a>面向对象的应用程序（Application）主要特点</h3><ul>
+<li>Application由类的定义和类的使用两部分组成, 在主程序（主动类）中创建各类的对象并规定它们之间传递消息的顺序。</li>
+<li>对象中的操作被执行都是通过向该对象发送消息来实现的。 该对象接收到消息后, 启动相应方法完成相关操作。</li>
+</ul>
+<h3 id="面向对象优点"><a href="#面向对象优点" class="headerlink" title="面向对象优点"></a>面向对象优点</h3><blockquote>
+<p>面向对象程序设计优于传统的结构化程序设计</p>
+</blockquote>
+<ul>
+<li>它有希望解决软件工程的两个主要的问题：软件复杂性控制和软件生产率的提高。</li>
+<li>达到软件工程的三个主要目标：重用性,灵活性,扩展性。</li>
+</ul>
+<h3 id="Object-Oriented-Analysis-面向对象分析"><a href="#Object-Oriented-Analysis-面向对象分析" class="headerlink" title="Object Oriented Analysis 面向对象分析"></a>Object Oriented Analysis 面向对象分析</h3><ul>
+<li>OOA是指利用面向对象的概念和方法为软件需求建造模型，使用户的需求逐步精确化、一致化、完全化的分析过程（建立问题域模型）。<ul>
+<li>首先应该明确用户的需求</li>
+<li>然后再将这些需求以标准化模型的形式规范地表述出来</li>
+</ul>
+</li>
+</ul>
+<h3 id="Object-Oriented-Design-面向对象设计"><a href="#Object-Oriented-Design-面向对象设计" class="headerlink" title="Object Oriented Design 面向对象设计"></a>Object Oriented Design 面向对象设计</h3><ul>
+<li>OOD是把分析阶段得到的需求转变成系统实现方案的过程（建立求解域模型）。<ul>
+<li>设计的目的是指定一个可行的解决方案，构建类图，以便能很容易地将需求转变成为编程代码。</li>
+<li>在设计阶段，并不牵涉某一种具体的计算机语言，而是用一种更通用的描述工具。</li>
+</ul>
+</li>
+</ul>
+<h2 id="Chapter-1-2"><a href="#Chapter-1-2" class="headerlink" title="Chapter 1.2"></a>Chapter 1.2</h2><h3 id="Object-Attributes-and-Methods"><a href="#Object-Attributes-and-Methods" class="headerlink" title="Object, Attributes and Methods"></a>Object, Attributes and Methods</h3><ul>
+<li>Object<ul>
+<li>It is a thing （实体，事物）that has attributes and<br>behaviors.</li>
+<li>object identity</li>
+</ul>
+</li>
+<li>Attributes （对象的静态特征，一般用数据表示）<ul>
+<li>describe the properties of an object.</li>
+<li>Such as color, weight, name,…  </li>
+</ul>
+</li>
+<li>Behaviors (对象的动态特征，用methods, or operations描述 )<ul>
+<li>describe what an object can do（对象的行为是描述这个对象能做什么）</li>
+<li>so using methods define the behavior of an object.（一般用方法（methods ）表示之）</li>
+</ul>
+</li>
+</ul>
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><ul>
+<li>对象是系统中用来描述客观事物的一个实体，它是构成系统的一个基本单位。</li>
+<li>对象可以是具体的、有形的物(如人、汽车，订单），也可以是无形的事物或概念</li>
+<li>对象是一个封装了属性和行为的实体</li>
+<li>对象只描述客观事物本质的、与系统目标有关的特征，而不考虑那些非本质的、与系统目标无关的特征。</li>
+</ul>
+<h3 id="Main-Types-of-Objects-in-software-system"><a href="#Main-Types-of-Objects-in-software-system" class="headerlink" title="Main Types of Objects in software system"></a>Main Types of Objects in software system</h3><ul>
+<li>Graphic User Interface (GUI) objects</li>
+<li>Problem domain objects </li>
+<li>Data access object</li>
+</ul>
+<h3 id="Objects-Interaction-and-Messages"><a href="#Objects-Interaction-and-Messages" class="headerlink" title="Objects Interaction and Messages"></a>Objects Interaction and Messages</h3><ul>
+<li>In an application, the objects interact and communicate with each other to complete the tasks.</li>
+<li>Objects interact by sending messages to each other, asking another object to invoke one of its methods. <ul>
+<li>消息：是向对象发出的服务请求。服务通常被称为方法（method）或函数（function）。对象之间通过消息进行交互。</li>
+</ul>
+</li>
+<li>对象之间的消息传递机制对应于面向过程程序设计的过程调用。<ul>
+<li>消息传递的实质就是方法的调用。只不过方法的调用受到消息的控制, 而过程调用是直接的。</li>
+</ul>
+</li>
+<li>消息与方法的关系：<ul>
+<li>消息的实现是通过对象中所定义的方法(method)来完成</li>
+<li>对象根据接收到的消息，调用相应的方法；有方法，对象才能响应相应的消息。</li>
+</ul>
+</li>
+</ul>
+<h3 id="类和实例"><a href="#类和实例" class="headerlink" title="类和实例"></a>类和实例</h3><ul>
+<li>Class （类）<ul>
+<li>Is a set of objects with same attributes and methods.</li>
+</ul>
+</li>
+<li>Instance （实例）<ul>
+<li>Objects can be referred to as instances（实例） of the class ：对象可以被称为类的实例（实例）</li>
+<li>When an object is created for the class, it is common to say the class is instantiated</li>
+<li>The terms “instance” and “object” are often used interchangeably</li>
+</ul>
+</li>
+</ul>
+<h3 id="Encapsulation-amp-Information-Hiding-（封装与信息隐藏）"><a href="#Encapsulation-amp-Information-Hiding-（封装与信息隐藏）" class="headerlink" title="Encapsulation &amp; Information Hiding （封装与信息隐藏）"></a>Encapsulation &amp; Information Hiding （封装与信息隐藏）</h3><ul>
+<li>Encapsulation（封装）<ul>
+<li>是指把对象的属性和操作封装进一个单元，它的内部信息对外界隐藏，不允许外界直接存取对象的属性，只能通过对象提供的有限接口对对象属性数据进行操作。</li>
+<li>对于外界来说，只能知晓对象的外部行为而无法了解对象行为的内部细节，这个可以保证对象内部属性数据的安全性。</li>
+<li>Encapsulation是面向对象方法的重要原则，也是类的一个特性。</li>
+</ul>
+</li>
+<li>Encapsulation特点：<ul>
+<li>保护数据成员（属性），不让该类以外的程序直接访问或修改，只能通过提供的公共的接口（方法名及参数）访问</li>
+<li>方法的细节对外部是隐藏的，只要接口不变，内容的修改不会影响到外部的调用者</li>
+<li>从对象外面不能直接访问对象的属性，只能通过和该属性对应的方法访问。（get、set）</li>
+<li>对象的方法可以接收对象外面的消息。</li>
+</ul>
+</li>
+<li>Information hiding<ul>
+<li>Using encapsulation to hide the internal structure of objects, protecting them from corruption</li>
+</ul>
+</li>
+<li>封装的作用<ul>
+<li>对象的数据封装特性彻底消除了传统结构方法中数据与操作分离所带来的种种问题，提高了程序的可复用性和可维护性，降低了程序员保持数据与操作相容的负担。</li>
+<li>对象的数据封装特性还可以把对象的私有数据和公共数据分离开，保护了私有数据，减少了可能的模块间干扰，达到降低程序复杂性、提高可控性的目的。</li>
+</ul>
+</li>
+</ul>
+<h3 id="Inheritance-（继承）"><a href="#Inheritance-（继承）" class="headerlink" title="Inheritance （继承）"></a>Inheritance （继承）</h3><ul>
+<li>one class of objects takeson characteristics of another class andextends them. （继承是在已有类（superclass）的基础上派生出新的类（subclass），新的类能够继承已有类的属性和行为，并扩展新的能力。）</li>
+<li>继承，也称泛化，它是面向对象描述类之间相似性的一个重要机制。</li>
+<li>继承是指子类可以自动拥有父类的全部属性与方法。</li>
+<li>继承的作用：<ul>
+<li>软件重用。避免公用代码的重复开发, 减少代码和数据冗余; </li>
+<li>便于扩展或改进。</li>
+</ul>
+</li>
+</ul>
+<h3 id="Polymorphism-（多态）"><a href="#Polymorphism-（多态）" class="headerlink" title="Polymorphism （多态）"></a>Polymorphism （多态）</h3><ul>
+<li>Is a term that describes a situation where one method’s name may refer to different methods. (不同的方法可以有相同的方法名)</li>
+</ul>
+<h3 id="Benefits-of-OO-concepts"><a href="#Benefits-of-OO-concepts" class="headerlink" title="Benefits of OO concepts"></a>Benefits of OO concepts</h3><ul>
+<li>Class – Remove redundant description</li>
+<li>Encapsulation – Easy to modify a data structure of an object without infecting others. 维护变得简单</li>
+<li>Inheritance – Reuse class and Easy to extension of functions by subclass</li>
+<li>Polymorphism – Reduce the complexity of a program; easy to change（override） object’s method</li>
+</ul>
+<h3 id="面向对象方法的主要特点"><a href="#面向对象方法的主要特点" class="headerlink" title="面向对象方法的主要特点"></a>面向对象方法的主要特点</h3><ul>
+<li>从问题域中存在的客观事物，用对象作为这些事物的抽象表示，并以此作为软件系统的基本构成单位。</li>
+<li>事物的静态特征用对象的属性表示，事物的动态特征用对象的服务（方法）表示。</li>
+<li>对象的属性与服务结合为一体，成为一个独立的实体，对外屏蔽其内部细节（称为封装）。</li>
+<li>对事物进行分类。具有相同属性/服务的对象归为一类，类是这些对象的抽象描述，每个对象是类的一个实例。</li>
+</ul>
+<h3 id="面向对象开发方法的优点"><a href="#面向对象开发方法的优点" class="headerlink" title="面向对象开发方法的优点"></a>面向对象开发方法的优点</h3><ul>
+<li>与人们习惯的思维方法一致<ul>
+<li>把软件系统看成是各种对象的集合，这更接近于人类的自然思维方式。</li>
+</ul>
+</li>
+<li>可使软件系统结构更加稳定 <ul>
+<li>因为封装－－对象是最小构造块 </li>
+</ul>
+</li>
+<li>支持封装，抽象，继承和多态，提高了软件的可重用性，可维护性和可扩展性</li>
+</ul>
+<h3 id="OOP设计的一般方法和技巧"><a href="#OOP设计的一般方法和技巧" class="headerlink" title="OOP设计的一般方法和技巧"></a>OOP设计的一般方法和技巧</h3><ul>
+<li>面向对象程序设计方法提供了一种新的系统设计模型，就是将软件系统看成是对象的集合，而对象是通过交互作用来完成任务的，每个对象用自己的方法管理数据。</li>
+<li>一个好的程序设计应具备的特征：<ul>
+<li>良好的可读性</li>
+<li>可重用性</li>
+<li>可维护性</li>
+<li>可扩展性</li>
+</ul>
+</li>
+</ul>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- Duoshuo Comment BEGIN -->
+                <div class="ds-thread" data-thread-key="2016/11/14/OOP1/" data-title="面向对象复习" data-url="http://mingdom.cn/blog/2016/11/14/OOP1/"></div>
+
+                <script type="text/javascript">
+                    console.log(document.querySelector('.ds-thread'));
+                    var duoshuoQuery = {
+                        short_name: 'mingdom'
+                    };
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';
+                        ds.async = true;
+                        ds.src = (document.location.protocol == 'https:'
+                            ? 'https:'
+                            : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- Duoshuo Comment END -->
+            </div>
+        </div>
+    </section>
+
+
+
+</div>
+
+        <div class="fixed-action-btn float-sitemap">
+    <a class="btn-floating btn-large light-blue">
+      <i class="fa fa-caret-square-o-up"></i>
+    </a>
+    <ul>
+      <li><a class="btn-return-top btn-floating waves-effect green" title="回到顶部"><i class="fa fa-arrow-circle-o-up"></i></a></li>
+      <li><a class="btn-floating waves-effect button-collapse yellow darken-1"  data-activates="main-menu" title="menu"><i class="fa fa-navicon"></i></a></li>
+    </ul>
+  </div>
+
+    </main>
+    <footer class="page-footer amber darken-1">
+    
+    <div class="container">
+        <div class="row">
+            
+            <div class="social-group col m3 s12">
+                <h5 class="white-text">社交</h5>
+                
+                    <a class="social-link" href="http://weibo.com/u/2866327102" target="_blank">
+                        <i class="fa fa-2x fa-weibo"></i>
+                    </a>
+                
+                    <a class="social-link" href="https://github.com/mxz96102" target="_blank">
+                        <i class="fa fa-2x fa-github"></i>
+                    </a>
+                
+            </div>
+            
+
+            
+            <div class="col m9 s12">
+                <h5 class="white-text">友情链接</h5>
+                
+                    <a class="social-link" href="" target="_blank">Friends:</a>
+                
+                    <a class="social-link" href="https://lizekang.github.io" target="_blank">Zekang Li</a>
+                
+                    <a class="social-link" href="https://chenmo1996.github.io" target="_blank">Guojin Chen</a>
+                
+                    <a class="social-link" href="https://www.zhgeng.cn" target="_blank">G-Petrichor</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <div class="footer-copyright light-blue-link-context">
+        <div class="container">
+            © 2016 MingDom All rights reserved.
+            <p class="right" style="margin-top: 0;">使用 <a href="https://hexo.io">Hexo</a> 框架 | 感谢 <a href="https://github.com/raytaylorlin/hexo-theme-raytaylorism">raytaylorism</a></p>
+        </div>
+    </div>
+</footer>
+
+
+    <noscript>
+    <div class="noscript">
+        <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+    </div>
+</noscript>
+<div class="noscript">
+    <p class="center-align">当前网速较慢或者你使用的浏览器不支持博客特定功能，请尝试刷新或换用Chrome、Firefox等现代浏览器</p>
+</div>
+
+
+<script src="/blog/js/jquery.min.js"></script>
+<script src="/blog/js/materialize.min.js"></script>
+
+<script>
+    (function($) {
+        $(document).ready(function() {
+            // 隐藏禁用javascript（针对微信内置浏览器）的提示
+            $('.noscript').hide();
+
+            // 图片缩放效果
+            var $imgs = $('img').not('.slider-image').not('.avatar-image').not('.carousel-image').not('.card-cover-image').not('.qrcode');
+
+            // 给图片加上点击放大效果（materialbox插件）
+            $imgs.addClass('materialboxed').each(function(i, el) {
+                $(this).attr('data-caption', $(this).attr('alt') || ' ');
+            }).materialbox();
+
+            // 优化表格的显示
+            $('table').each(function() {
+                var $table = $(this);
+                // 除去多行代码的情况
+                if ($table.find('pre').length == 0) {
+                    $table.addClass('responsive-table striped bordered');
+                }
+            });
+
+            // 首页幻灯片
+            $('.slider').slider({indicators: true, full_width: true, interval: 8000});
+
+            $(".button-collapse").sideNav();
+            $(".category-menu").sideNav();
+
+            // 针对gallery post
+            $('.carousel').carousel({full_width: true});
+            $('.carousel-control.prev').click(function() {
+                $('.carousel').carousel('prev');
+            });
+            $('.carousel-control.next').click(function() {
+                $('.carousel').carousel('next');
+            });
+
+            // 文章目录
+            $('article').not('.simple-article').find('h1').add('h2').add('h3').add('h4').add('h5').add('h6').scrollSpy();
+            // 修正文章目录的left-border颜色
+            var color = $('.table-of-contents-text').css('color');
+            $('.table-of-contents-link').css('border-left-color', color);
+
+            // 针对移动端做的优化：FAB按钮点击一下收回
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.fixed-action-btn').addClass('click-to-toggle');
+            }
+            // 回到顶部
+            $('.btn-return-top').click(function() {
+                $('body, html').animate({
+                    scrollTop: 0
+                }, 500);
+            });
+
+            // 重置读书页面的Tab标签页的颜色
+            $('li.tab a').hover(function() {
+                $(this).toggleClass('text-lighten-4');
+            });
+            $('.indicator').addClass('light-blue lighten-2');
+
+            
+            // 添加new标签
+            $('').append('<span class="new badge light-blue"></span>');
+            
+
+            // 搜索功能
+            $('.modal-trigger').leanModal({
+                // 打开搜索框时自动聚焦
+                ready: function() {
+                    if ($('#search').is(":visible")) {
+                        $('#search-input').focus();
+                    }
+                }
+            });
+            var searchXml = "";
+            if (searchXml.length == 0) {
+             	searchXml = "search.xml";
+            }
+            var searchPath = "/blog/" + searchXml;
+            initSearch(searchPath, 'search-input', 'search-result');
+        });
+
+        // 初始化搜索与匹配函数
+        var initSearch = function(path, search_id, content_id) {
+            'use strict';
+            $.ajax({
+                url: path,
+                dataType: "xml",
+                success: function(xmlResponse) {
+                    // get the contents from search data
+                    var datas = $("entry", xmlResponse).map(function() {
+                        return {
+                            title: $("title", this).text(),
+                            content: $("content", this).text(),
+                            url: $("url", this).text()
+                        };
+                    }).get();
+                    var $input = document.getElementById(search_id);
+                    var $resultContent = document.getElementById(content_id);
+                    $input.addEventListener('input', function() {
+                        var str = '<ul class=\"search-result-list\">';
+                        var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                        $resultContent.innerHTML = "";
+                        if (this.value.trim().length <= 0) {
+                            return;
+                        }
+                        // perform local searching
+                        datas.forEach(function(data) {
+                            var isMatch = true;
+                            var content_index = [];
+                            var data_title = data.title.trim().toLowerCase();
+                            var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                            var data_url = data.url;
+                            var index_title = -1;
+                            var index_content = -1;
+                            var first_occur = -1;
+                            // only match artiles with not empty titles and contents
+                            if (data_title != '' && data_content != '') {
+                                keywords.forEach(function(keyword, i) {
+                                    index_title = data_title.indexOf(keyword);
+                                    index_content = data_content.indexOf(keyword);
+                                    if (index_title < 0 && index_content < 0) {
+                                        isMatch = false;
+                                    } else {
+                                        if (index_content < 0) {
+                                            index_content = 0;
+                                        }
+                                        if (i == 0) {
+                                            first_occur = index_content;
+                                        }
+                                    }
+                                });
+                            }
+                            // show search results
+                            if (isMatch) {
+                                keywords.forEach(function(keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    data_title = data_title.replace(regS, "<span class=\"search-keyword light-blue lighten-2\">" + keyword + "</span>");
+                                });
+
+                                str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                                var content = data.content.trim().replace(/<[^>]+>/g, "");
+                                if (first_occur >= 0) {
+                                    // cut out 100 characters
+                                    var start = first_occur - 20;
+                                    var end = first_occur + 80;
+                                    if (start < 0) {
+                                        start = 0;
+                                    }
+                                    if (start == 0) {
+                                        end = 100;
+                                    }
+                                    if (end > content.length) {
+                                        end = content.length;
+                                    }
+                                    var match_content = content.substring(start, end);
+                                    // highlight all keywords
+                                    keywords.forEach(function(keyword) {
+                                        var regS = new RegExp(keyword, "gi");
+                                        match_content = match_content.replace(regS, "<span class=\"search-keyword light-blue lighten-2\">" + keyword + "</span>");
+                                    });
+
+                                    str += "<p class=\"search-result\">..." + match_content + "...</p>"
+                                }
+                                str += "</li>";
+                            }
+                        });
+                        str += "</ul>";
+                        $resultContent.innerHTML = str;
+                    });
+                }
+            });
+        }
+    })(jQuery);
+</script>
+
+
+<script src="/blog/js/prettify.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("pre").addClass("prettyprint");
+        prettyPrint();
+    });
+</script>
+
+
+
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=58802746" charset="UTF-8"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async
+  src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+</body>
+</html>
