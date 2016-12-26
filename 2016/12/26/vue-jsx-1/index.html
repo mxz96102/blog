@@ -7,7 +7,7 @@
 
     
 
-    <title>多牧乡</title>
+    <title>Vue 2.0 jsx写法探究 （一） | 多牧乡</title>
     <meta name="author" content="John Doe">
     
     <meta name="description" content="我会常常说，愿景之类的，删除掉就好了。">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="Vue 2.0 jsx写法探究 （一）"/>
     <meta property="og:site_name" content="多牧 的 幻想乡"/>
 
     
@@ -160,80 +160,32 @@
 
 
     <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper amber">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
         
 
-<div class="slider">
-    <ul class="slides">
-    
-       <li>
-           <a href="blog/2016/12/26/vue-jsx-1/">
-               <img class="slider-image" src="http://vuejs.org/images/logo.png">
-               <div class="caption center-align">
-                 <h4>Vue 2.0 jsx写法探究 （一）</h3>
-                 <h5 class="light grey-text text-lighten-3">这里是无用实验室</h5>
-               </div>
-           </a>
-       </li>
-    
-       <li>
-           <a href="blog/2016/11/14/hakeJSstart/">
-               <img class="slider-image" src="http://mingdom.cn/img/RS-Hake.jpg">
-               <div class="caption center-align">
-                 <h4>Hake JS 已经开始</h3>
-                 <h5 class="light grey-text text-lighten-3">看看我能不能做好做满</h5>
-               </div>
-           </a>
-       </li>
-    
-       <li>
-           <a href="blog/2016/10/04/angular2-try/">
-               <img class="slider-image" src="https://angular.io/resources/images/home/loved-by-millions.png">
-               <div class="caption center-align">
-                 <h4>Angular 2 is coming</h3>
-                 <h5 class="light grey-text text-lighten-3">看看谷歌爸爸有没有做好做满</h5>
-               </div>
-           </a>
-       </li>
-    
-       <li>
-           <a href="/blog/2016/10/03/SPS20E02/">
-               <img class="slider-image" src="http://mingdom.cn/img/south-park-s20e02-skank-hunt_16x9.jpg">
-               <div class="caption center-align">
-                 <h4>South Park S20 Coming</h3>
-                 <h5 class="light grey-text text-lighten-3">『我要从此退出SNS』</h5>
-               </div>
-           </a>
-       </li>
-    
-       <li>
-           <a href="/blog/2016/10/02/start/">
-               <img class="slider-image" src="http://mingdom.cn/Dom/bg.jpg">
-               <div class="caption center-align">
-                 <h4>Season May Fade</h3>
-                 <h5 class="light grey-text text-lighten-3">总将旧瓶装新酒，风月常新</h5>
-               </div>
-           </a>
-       </li>
-    
-   </ul>
- </div>
+        
+    </div>
+</nav>
 
-
-
-<div id="article-list" class="container main-container">
-    
-        <article class="simple-article">
+<article>
     <div class="card">
         <div class="card-content">
+            
+
             <div class="article-title">
                 
     
-        <h1 class="amber-link-context"><a href="/blog/2016/12/26/vue-jsx-1/">Vue 2.0 jsx写法探究 （一）</a></h1>
+        <h1>Vue 2.0 jsx写法探究 （一）</h1>
     
 
 
             </div>
-
             <time class="light-blue-link-context" datetime="2016-12-26T12:04:34.000Z"><a href="/blog/2016/12/26/vue-jsx-1/">2016-12-26</a></time>
 
             
@@ -248,336 +200,66 @@
     </div>
 
 
+            <div class="toc light-blue-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#『无用js研究所』"><span class="section table-of-contents-text">『无用js研究所』</span></a><ol class="section table-of-contents-child"><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#为什么要jsx"><span class="section table-of-contents-text">为什么要jsx</span></a></li><li class="section table-of-contents-item section table-of-contents-level-2"><a class="section table-of-contents-link" href="#怎么写jsx"><span class="section table-of-contents-text">怎么写jsx</span></a></li></ol></li></ol>
+</div>
 
-            
-                <div class="entry light-blue-link-context">
-                    <h1 id="『无用js研究所』"><a href="#『无用js研究所』" class="headerlink" title="『无用js研究所』"></a>『无用js研究所』</h1><blockquote>
+
+            <div class="entry light-blue-link-context">
+                <h1 id="『无用js研究所』"><a href="#『无用js研究所』" class="headerlink" title="『无用js研究所』"></a>『无用js研究所』</h1><blockquote>
 <p>随便玩玩，开心就好</p>
 </blockquote>
 <p><img src="http://vuejs.org/images/logo.png" alt=""></p>
 <h2 id="为什么要jsx"><a href="#为什么要jsx" class="headerlink" title="为什么要jsx"></a>为什么要jsx</h2><p>Vue是我在前端抛弃了angular和backbone之后，用过的第三款前端框架，并没有诋毁前两款的意思，我只是在选择一个自己写自己的东西时候，可以很方便的使用，降低我对中等开发难度的开发时间。</p>
-                </div>
-            
-        </div>
-
-        
-        <div class="card-action light-blue-link-context">
-            <a href="/blog/2016/12/26/vue-jsx-1/">READ MORE</a>
-        </ div>
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="amber-link-context"><a href="/blog/2016/11/14/hakeJSstart/">HakeJS 一切开始在这里</a></h1>
-    
-
+<a id="more"></a>
+<p>在Vue 1.0的时候，我们很方便的使用Vue loader来实现了vue的编写，在这个模式下大家也逐渐习惯了，template，script，style这样经典的文件结构。</p>
+<p>在用过一阵子React之后，我思考，既然现在两者都是基于virtual-DOM实现，那渲染方法也可以类似的类比，所以，我开始了关于vue的jsx写法的一点小小探究</p>
+<p>jsx是一个广受争议的写法，他将标记语言混杂进了js语句的编译中，但是却方便的组件逻辑的书写，在此不做优劣讨论，这只是简单的研究</p>
+<h2 id="怎么写jsx"><a href="#怎么写jsx" class="headerlink" title="怎么写jsx"></a>怎么写jsx</h2><p>我们可以注意到，vue提供了一个babel的插件可以实现jsx的vue的编译，</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install --save-dev babel-plugin-syntax-jsx babel-plugin-transform-vue-jsx</div></pre></td></tr></table></figure>
+<p>接着在.babelrc中加入插件 “transform-vue-jsx”</p>
+<p>这样的话我们就可以创建自己的第一个vue中的jsx文件了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></div><div class="line"></div><div class="line"><span class="keyword">let</span> test = &#123;</div><div class="line">  render(h)&#123; <span class="comment">//渲染需要获取这个h对象</span></div><div class="line">    <span class="keyword">return</span> (</div><div class="line">	  &lt;div&gt;</div><div class="line">	    This is a test</div><div class="line">		&lt;p&gt;&#123;this.message&#125;&lt;/p&gt;</div><div class="line">	  &lt;/div&gt;</div><div class="line">	)</div><div class="line">  &#125;,</div><div class="line">  data()&#123;</div><div class="line">    <span class="keyword">return</span> &#123;</div><div class="line">      <span class="attr">message</span> : <span class="string">'hello'</span></div><div class="line">	&#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> Vue.extend(test)</div></pre></td></tr></table></figure>
+<p>我们现在已经解决了最简单的问题，怎样写一个vue组件，在test这个对象里，包括了原本的script标签的逻辑，以及template标签的网页结构。<br>那么style呢，style的话我觉得可以使用babel的插件import或者require来解决，通过配置webpack可以基本实现scoped的属性（加个hash码什么的）。</p>
+<p>在引入组件的时候，我们可以优雅的使用，&lt;组件引用名称/&gt;来引用组件。</p>
+<p>下一次，我大概会写关于jsx写法中vue的自带标签attribute的实现，以及DOM操作之类的。<br>TBC···</p>
 
             </div>
-
-            <time class="light-blue-link-context" datetime="2016-11-14T13:03:05.000Z"><a href="/blog/2016/11/14/hakeJSstart/">2016-11-14</a></time>
-
-            
-    <div class="tags-row">
-        
-            <a href="/blog/tags/web前端/" class="chip light-blue lighten-1">web前端</a>
-        
-            <a href="/blog/tags/技术/" class="chip light-blue lighten-1">技术</a>
-        
-            <a href="/blog/tags/HakeJS/" class="chip light-blue lighten-1">HakeJS</a>
-        
-    </div>
-
-
-
-            
-                <div class="entry light-blue-link-context">
-                    <h1 id="『因为不想做咸鱼所以成了HAKE』"><a href="#『因为不想做咸鱼所以成了HAKE』" class="headerlink" title="『因为不想做咸鱼所以成了HAKE』"></a>『因为不想做咸鱼所以成了HAKE』</h1><blockquote>
-<p>话说其实翻译成蛤客或者狗血挺好的</p>
-</blockquote>
-<p><img src="http://mingdom.cn/img/RS-Hake.jpg" alt=""><br>大概觉得自己水平太菜，框架用的比较溜没用啊，所以开始自己造轮子了！</p>
-                </div>
-            
         </div>
-
-        
-        <div class="card-action light-blue-link-context">
-            <a href="/blog/2016/11/14/hakeJSstart/">READ MORE</a>
-        </ div>
-        
     </div>
 </article>
 
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="amber-link-context"><a href="/blog/2016/11/14/OOP1/">面向对象复习</a></h1>
-    
 
 
+
+    <section id="comment">
+        <div class="card">
+            <div class="card-content">
+                <!-- Duoshuo Comment BEGIN -->
+                <div class="ds-thread" data-thread-key="2016/12/26/vue-jsx-1/" data-title="Vue 2.0 jsx写法探究 （一）" data-url="http://mingdom.cn/blog/2016/12/26/vue-jsx-1/"></div>
+
+                <script type="text/javascript">
+                    console.log(document.querySelector('.ds-thread'));
+                    var duoshuoQuery = {
+                        short_name: 'mingdom'
+                    };
+                    (function() {
+                        var ds = document.createElement('script');
+                        ds.type = 'text/javascript';
+                        ds.async = true;
+                        ds.src = (document.location.protocol == 'https:'
+                            ? 'https:'
+                            : 'http:') + '//static.duoshuo.com/embed.js';
+                        ds.charset = 'UTF-8';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+                    })();
+                </script>
+                <!-- Duoshuo Comment END -->
             </div>
-
-            <time class="light-blue-link-context" datetime="2016-11-14T12:54:38.000Z"><a href="/blog/2016/11/14/OOP1/">2016-11-14</a></time>
-
-            
-    <div class="tags-row">
-        
-            <a href="/blog/tags/学习-面向对象/" class="chip light-blue lighten-1">-学习 -面向对象</a>
-        
-    </div>
-
-
-
-            
-                <div class="entry light-blue-link-context">
-                    <h1 id="面相对象期末总结"><a href="#面相对象期末总结" class="headerlink" title="面相对象期末总结"></a>面相对象期末总结</h1><blockquote>
-<p>来自于总结面向对象ppt</p>
-</blockquote>
-                </div>
-            
         </div>
-
-        
-        <div class="card-action light-blue-link-context">
-            <a href="/blog/2016/11/14/OOP1/">READ MORE</a>
-        </ div>
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="amber-link-context"><a href="/blog/2016/10/04/angular2-try/">Angular2 用cli起航</a></h1>
-    
+    </section>
 
 
-            </div>
-
-            <time class="light-blue-link-context" datetime="2016-10-04T15:41:01.000Z"><a href="/blog/2016/10/04/angular2-try/">2016-10-04</a></time>
-
-            
-    <div class="tags-row">
-        
-            <a href="/blog/tags/web前端/" class="chip light-blue lighten-1">web前端</a>
-        
-            <a href="/blog/tags/技术/" class="chip light-blue lighten-1">技术</a>
-        
-            <a href="/blog/tags/Angular/" class="chip light-blue lighten-1">Angular</a>
-        
-    </div>
-
-
-
-            
-                <div class="entry light-blue-link-context">
-                    <h1 id="『Angular-2-时代』"><a href="#『Angular-2-时代』" class="headerlink" title="『Angular 2 时代』"></a>『Angular 2 时代』</h1><p><img src="https://angular.io/resources/images/home/loved-by-millions.png" alt=""></p>
-<h2 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h2><p>这个博客还没有很多技术文章，就让这个来做第一个吧。<br>谷歌爸爸追上了时代的潮流，将大而全的angular推出了完全重构组件化的angular2。<br>所以我们就来使用angular-cli，致力于傻瓜式使用angular2吧。</p>
-                </div>
-            
-        </div>
-
-        
-        <div class="card-action light-blue-link-context">
-            <a href="/blog/2016/10/04/angular2-try/">READ MORE</a>
-        </ div>
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="amber-link-context"><a href="/blog/2016/10/03/SPS20E02/">我要从此退出SNS 南方公园二十季来了</a></h1>
-    
-
-
-            </div>
-
-            <time class="light-blue-link-context" datetime="2016-10-03T05:19:42.000Z"><a href="/blog/2016/10/03/SPS20E02/">2016-10-03</a></time>
-
-            
-    <div class="tags-row">
-        
-            <a href="/blog/tags/动画/" class="chip light-blue lighten-1">动画</a>
-        
-            <a href="/blog/tags/美剧/" class="chip light-blue lighten-1">美剧</a>
-        
-            <a href="/blog/tags/评论/" class="chip light-blue lighten-1">评论</a>
-        
-    </div>
-
-
-
-            
-                <div class="entry light-blue-link-context">
-                    <h1 id="『推特式自杀』"><a href="#『推特式自杀』" class="headerlink" title="『推特式自杀』"></a>『推特式自杀』</h1><p><img src="http://mingdom.cn/img/south-park-s20e02-skank-hunt_16x9.jpg?" alt="Trolling"></p>
-<h2 id="南方公园又来了，厉害了word哥"><a href="#南方公园又来了，厉害了word哥" class="headerlink" title="南方公园又来了，厉害了word哥"></a>南方公园又来了，厉害了word哥</h2><p>S20了，南方公园又来了，这两集讲了什么，其实还是死亡的故事。</p>
-                </div>
-            
-        </div>
-
-        
-        <div class="card-action light-blue-link-context">
-            <a href="/blog/2016/10/03/SPS20E02/">READ MORE</a>
-        </ div>
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="amber-link-context"><a href="/blog/2016/10/02/ishiki/">意識</a></h1>
-    
-
-
-            </div>
-
-            <time class="light-blue-link-context" datetime="2016-10-02T14:06:26.000Z"><a href="/blog/2016/10/02/ishiki/">2016-10-02</a></time>
-
-            
-    <div class="tags-row">
-        
-            <a href="/blog/tags/评论/" class="chip light-blue lighten-1">评论</a>
-        
-            <a href="/blog/tags/音乐/" class="chip light-blue lighten-1">音乐</a>
-        
-    </div>
-
-
-
-            
-                <div class="entry light-blue-link-context">
-                    <h1 id="『你可不要说谎』"><a href="#『你可不要说谎』" class="headerlink" title="『你可不要说谎』"></a>『你可不要说谎』</h1><p><img src="http://p4.music.126.net/UT0h0oiomGIFWlK128oCHA==/783951790626634.jpg" alt="意識-专辑封面"></p>
-<h2 id="由来"><a href="#由来" class="headerlink" title="由来"></a>由来</h2><p>我心中的椎名，一男一女，苹果小姐每次都会让我有很多新的感受。<br>就像优雅的唱出心中的痛点那般，说出了心声。</p>
-                </div>
-            
-        </div>
-
-        
-        <div class="card-action light-blue-link-context">
-            <a href="/blog/2016/10/02/ishiki/">READ MORE</a>
-        </ div>
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="amber-link-context"><a href="/blog/2016/10/02/birthday/">带着诸多的过去，我二十了呢</a></h1>
-    
-
-
-            </div>
-
-            <time class="light-blue-link-context" datetime="2016-10-02T05:55:06.000Z"><a href="/blog/2016/10/02/birthday/">2016-10-02</a></time>
-
-            
-    <div class="tags-row">
-        
-            <a href="/blog/tags/日常/" class="chip light-blue lighten-1">日常</a>
-        
-    </div>
-
-
-
-            
-                <div class="entry light-blue-link-context">
-                    <p>又是一年生日，满二十岁了呢。</p>
-                </div>
-            
-        </div>
-
-        
-        <div class="card-action light-blue-link-context">
-            <a href="/blog/2016/10/02/birthday/">READ MORE</a>
-        </ div>
-        
-    </div>
-</article>
-
-    
-        <article class="simple-article">
-    <div class="card">
-        <div class="card-content">
-            <div class="article-title">
-                
-    
-        <h1 class="amber-link-context"><a href="/blog/2016/10/02/start/">二十了，又来一个开始</a></h1>
-    
-
-
-            </div>
-
-            <time class="light-blue-link-context" datetime="2016-10-02T05:10:34.000Z"><a href="/blog/2016/10/02/start/">2016-10-02</a></time>
-
-            
-    <div class="tags-row">
-        
-            <a href="/blog/tags/日常/" class="chip light-blue lighten-1">日常</a>
-        
-    </div>
-
-
-
-            
-                <div class="entry light-blue-link-context">
-                    <p>由于服务器的关系，我的博客还是迭代了很多次，多以这一次，又是一个新的博客。</p>
-                </div>
-            
-        </div>
-
-        
-        <div class="card-action light-blue-link-context">
-            <a href="/blog/2016/10/02/start/">READ MORE</a>
-        </ div>
-        
-    </div>
-</article>
-
-    
-
-    <ul class="pagination center-align">
-    <li class="disabled">
-        <a href="/blog/"><i class="fa fa-angle-left"></i></a>
-    </li>
-    
-    
-        <li class="active light-blue"><a href="/">1</a></li>
-    
-    
-    <li class="disabled">
-        <a href="/blog/"><i class="fa fa-angle-right"></i></a>
-    </li>
- </ul>
 
 </div>
 
